@@ -12,7 +12,7 @@ html, body {
 
 body {
     background: url("images/background.jpg");
-  background-size: cover;
+  background-size:auto;
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -127,3 +127,37 @@ h3 {
 padding: none;
 margin: none;
 }
+
+@media(max-width: 700px) {
+
+    .heading {
+
+        font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+    .card {
+        width: 4em;
+        height: 4em;
+    }
+
+
+    .card-front, .card-back {
+
+        font-size: 2em;
+    }
+
+    #game-board {
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+
+    }
+
+    #new-game-button {
+        text-align: center;
+    }
+
+
+}
+
